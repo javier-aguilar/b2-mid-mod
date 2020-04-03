@@ -17,11 +17,14 @@ park2 = Park.create(name: "Disney World",
                     admission: 95.00)
 
 ride1 = Ride.create(name: "Space Mountain",
-                    thrill_rating: 4,
+                    thrill_rating: 8,
                     park_id: park2.id)
 ride2 = Ride.create(name: "It's A Small World",
                     thrill_rating: 1,
                     park_id: park2.id)
 ride3 = Ride.create(name: "Splash Mountain",
-                    thrill_rating: 4,
-                    park_id: park2.id)
+                   thrill_rating: 9,
+                   park_id: park2.id)
+
+mechanic1.rides << ride1
+mechanic1.rides << ride2

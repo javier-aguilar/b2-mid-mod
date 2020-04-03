@@ -1,4 +1,3 @@
-#     Average Thrill Rating of Rides: 7.8/10
 require 'rails_helper'
 
 RSpec.describe 'As a user' do

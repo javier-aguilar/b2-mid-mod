@@ -4,6 +4,8 @@ class CreateRides < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :thrill_rating
       t.references :park, foreign_key: true
+
+      t.timestamps
     end
   end
 end

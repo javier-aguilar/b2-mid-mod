@@ -1,0 +1,31 @@
+<section class = "mechanic">
+
+  <section id = "mechanic-<%= "#{@mechanic.id}" %>">
+      <h1>Mechanic: <%= "#{@mechanic.name}" %></h1>
+      <h1>Years of Experience: <%= "#{@mechanic.years_of_experience}" %></h1>
+
+      <p>Current rides they're working on: </p>
+      <% @mechanic.rides.each do |ride| %>
+        <section id = "ride-<%= "#{ride.id}" %>" class = "rides">
+          <%= "#{ride.name}" %>
+        </section>
+      <% end %>
+
+      <% flash.each do |type, message| %>
+      <section class = 'info' >
+        <section class = <%= type %>>
+          <p><%= message %></p>
+        </section>
+      </section>
+      <% end %>
+      <p>Add a ride to workload:</p>
+      <%= form_tag("/mechanics/#{@mechanic.id}", method: "patch") do %>
+      <%= label_tag "Ride" %>
+      <br />
+      <%= text_field_tag :ride, nil, placeholder: "Ride ID" %>
+      <br />
+      <%= submit_tag "Submit"%>
+    <% end %>
+  </section>
+
+</section>
