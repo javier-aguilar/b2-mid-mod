@@ -1,0 +1,12 @@
+<section class = "mechanics">
+  <h1>All Mechanics</h1>
+
+
+  <% @mechanics.each do |mechanic| %>
+  <section id = "mechanic-<%= "#{mechanic.id}" %>">
+    <%= "#{mechanic.name}" %>
+    <%= "#{mechanic.years_of_experience}" %>
+  </section>
+  <% end %>
+
+</section>
