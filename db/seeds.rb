@@ -25,6 +25,9 @@ ride2 = Ride.create(name: "It's A Small World",
 ride3 = Ride.create(name: "Splash Mountain",
                    thrill_rating: 9,
                    park_id: park2.id)
+ride4 = Ride.create(name: "Lightning Racer",
+                    thrill_rating: 7,
+                    park_id: park1.id)
 
 mechanic1.rides << ride1
 mechanic1.rides << ride2

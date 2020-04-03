@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: sans-serif;
+  margin-top: 30px;
+  margin-left: 35px;
+ }
+
+ form input{
+    display: block;
+    border: 1px solid grey;
+    min-height: 20px;
+    width: 200px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  form input[type=submit] {
+    font-size: 14px;
+    width: 210px;
+  }
+
+

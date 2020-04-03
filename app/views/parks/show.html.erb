@@ -3,7 +3,7 @@
 
   <section id = "park-<%= "#{@park.id}" %>">
     <h1><%= "#{@park.name}" %></h1>
-    <h2>Admission:
+    <h2>Admissions:
       $<%= "#{number_with_precision(@park.admission.round, precision: 2)}" %>
     </h2>
 
