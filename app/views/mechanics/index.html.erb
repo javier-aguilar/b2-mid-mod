@@ -4,8 +4,9 @@
 
   <% @mechanics.each do |mechanic| %>
   <section id = "mechanic-<%= "#{mechanic.id}" %>">
-    <%= "#{mechanic.name}" %>
-    <%= "#{mechanic.years_of_experience}" %>
+    <p>Name: <%= "#{mechanic.name}" %></p>
+    <p>Years of experience: <%= "#{mechanic.years_of_experience}" %></p>
+    <br  />
   </section>
   <% end %>
 
