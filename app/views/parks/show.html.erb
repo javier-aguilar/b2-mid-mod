@@ -1,0 +1,24 @@
+<section class = "park">
+
+
+  <section id = "park-<%= "#{@park.id}" %>">
+    <h1><%= "#{@park.name}" %></h1>
+    <h2>Admission:
+      $<%= "#{number_with_precision(@park.admission.round, precision: 2)}" %>
+    </h2>
+
+    <section class = "rides">
+      <h3>Rides:</h3>
+
+      <ol>
+      <% @park.rides.each do |ride| %>
+          <li><%= "#{ride.name}" %></li>
+      <% end %>
+      </ol>
+    </section>
+
+      <br  />
+      Average Thrill Rating of Rides:  <%= "#{@park.average_thrill_rating}" %>/10
+    </section>
+
+</section>

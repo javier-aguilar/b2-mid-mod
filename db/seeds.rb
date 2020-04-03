@@ -10,3 +10,18 @@ mechanic1 = Mechanic.create(name: "Cid",
                              years_of_experience: 4)
 mechanic2 = Mechanic.create(name: "Tron Bonne",
                              years_of_experience: 3)
+
+park1 = Park.create(name: "Hershey Park",
+                    admission: 50.00)
+park2 = Park.create(name: "Disney World",
+                    admission: 95.00)
+
+ride1 = Ride.create(name: "Space Mountain",
+                    thrill_rating: 4,
+                    park_id: park2.id)
+ride2 = Ride.create(name: "It's A Small World",
+                    thrill_rating: 1,
+                    park_id: park2.id)
+ride3 = Ride.create(name: "Splash Mountain",
+                    thrill_rating: 4,
+                    park_id: park2.id)
