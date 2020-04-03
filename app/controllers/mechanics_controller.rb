@@ -10,7 +10,7 @@ class MechanicsController < ApplicationController
 
   def update
     mechanic = Mechanic.find(params[:id])
-    mechanic.add_ride(params[:ride]) ? flash[:notice] = "Added ride!" : flash[:error] = "Ride cannot be added"
+    mechanic.add_ride(params[:ride]) ? flash[:success] = "Added ride!" : flash[:error] = "Ride cannot be added"
     redirect_to "/mechanics/#{mechanic.id}"
   end
 

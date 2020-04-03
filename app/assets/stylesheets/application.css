@@ -34,4 +34,12 @@
     width: 210px;
   }
 
+  .error {
+    color: red;
+  }
+
+  .success {
+    color: green;
+  }
+
 
